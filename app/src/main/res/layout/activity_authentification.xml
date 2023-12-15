@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.AuthenticationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_mobilis"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_mobilis"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="100dp"/>
+
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="35dp"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_name__"
+            android:drawablePadding="2dp"
+            android:hint="@string/email"
+            android:padding="10dp" />
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_email"
+            android:layout_marginHorizontal="35dp"
+            android:hint="@string/password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_password"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="6dp"/>
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_password"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="35dp"
+            style="@style/CheckBoxStyle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember"
+            android:layout_below="@id/edt_password"
+            android:layout_toEndOf="@id/check_box"
+            android:layout_marginTop="25dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_box"
+            android:layout_marginTop="30dp"
+            android:paddingVertical="1dp"
+            android:layout_centerHorizontal="true">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="60dp"
+                android:background="@drawable/btn_shape"/>
+            <ProgressBar
+                android:id="@+id/progress_auth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:background="@drawable/progress"
+                android:padding="3dp"
+                android:indeterminateTint="@color/white"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

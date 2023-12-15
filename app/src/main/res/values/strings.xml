@@ -1,0 +1,211 @@
+<resources>
+    <string name="app_name">Mail Management</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="email">Enter your email</string>
+    <string name="password">Enter your password</string>
+    <string name="remember">Remember Me</string>
+    <string name="sign_in">sign in</string>
+    <string name="designation">Designation</string>ù
+    <string name="number">Number</string>
+    <string name="code">Code</string>
+    <string name="job">Job :</string>
+    <string name="job_">Job</string>
+    <string name="failed">failed</string>
+    <string name="updated">updated</string>
+    <string name="created">created</string>
+    <string name="password_">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="employee">Employee</string>
+    <string name="registration_key">Registration Key</string>
+    <string name="nothing_in_employee">No Employee</string>
+    <string name="function">Function</string>
+    <string name="hide">Hide filter</string>
+    <string name="présent">Présent</string>
+    <string name="mut">MUTATION</string>
+    <string name="sus">SUSPENDU DE SES FONCTIONS</string>
+    <string name="for_">FORMATION</string>
+    <string name="ca">CONGE  ANNUEL</string>
+    <string name="ce">CONGE   EXEPTIONNEL</string>
+    <string name="rc">RECUPERATION</string>
+    <string name="cs">CONGE  SANS SOLDE</string>
+    <string name="mis">MISSION COMMANDEE</string>
+    <string name="abr">ABSENCE REMUNEREE</string>
+    <string name="f">JOUR FERIER</string>
+    <string name="rup">RUPTURE DE CONTRAT</string>
+    <string name="pa">PRESENT DEMI JOURNEE</string>
+    <string name="abi">ABSENCE IRREGULIERE</string>
+    <string name="anr">ABSENCE  AUTORISEE</string>
+    <string name="mac">MALADIE </string>
+    <string name="mat">CONGE  MATERNITE</string>
+    <string name="fc">FIN DE CONTRAT </string>
+    <string name="md">MISE EN DISPONIBILITE</string>
+    <string name="w">WEEK –END</string>
+    <string name="dt">DETACHE</string>
+    <string name="el">ÉLECTION</string>
+    <string name="p_">P</string>
+    <string name="mut_">MUT</string>
+    <string name="sus_">SUS</string>
+    <string name="for__">FOR</string>
+    <string name="ca_">CA</string>
+    <string name="ce_">CE</string>
+    <string name="rc_">RC</string>
+    <string name="cs_">CS</string>
+    <string name="mis_">MIS</string>
+    <string name="abr_">ABR</string>
+    <string name="f_">F</string>
+    <string name="rup_">RUP</string>
+    <string name="pa_">PA</string>
+    <string name="abi_">ABI</string>
+    <string name="anr_">ANR</string>
+    <string name="mac_">MAC</string>
+    <string name="mat_">MAT</string>
+    <string name="fc_">FC</string>
+    <string name="md_">MD</string>
+    <string name="w_">W</string>
+    <string name="dt_">DT</string>
+    <string name="el_">EL</string>
+    <string name="approve">Approve</string>
+    <string name="state">state :</string>
+    <string name="try_again">Try again</string>
+    <string name="error">Nom d\'utilisateur ou mot de passe erroné</string>
+    <string name="attendance">Attendance is recorded</string>
+    <string name="user">User</string>
+    <string name="sure">Are you sure ?</string>
+    <string name="alert">Alert</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="profile">Profile</string>
+    <string name="trace">Trace</string>
+    <string name="admin">Admin</string>
+    <string name="secretary">Secretary</string>
+    <string name="secretary_acting">Acting Secretary</string>
+    <string name="Director">Director</string>
+    <string name="begin_date">Begin Date</string>
+    <string name="end_date">End Date</string>
+    <string name="director_acting">Acting Director</string>
+    <string name="documents">Documents</string>
+    <string name="notification">Notification</string>
+    <string name="comments">Comments</string>
+    <string name="comment">Type your comment</string>
+    <string name="home">Home</string>
+    <string name="archive">Archive</string>
+    <string name="arrive">Courrier Arrivé</string>
+    <string name="favorite">Favorite</string>
+    <string name="depart">Courrier Départ</string>
+    <string name="search">Search Here</string>
+    <string name="name">Name</string>
+    <string name="new_">New</string>
+    <string name="first_name">First Name</string>
+    <string name="structure">Structure</string>
+    <string name="action_">Action</string>
+    <string name="category">Category</string>
+    <string name="structure_">Structure :</string>
+    <string name="email_">Email</string>
+    <string name="user_">User :</string>
+    <string name="naw__">New :</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="contact">Contact</string>
+    <string name="report">Report</string>
+    <string name="for_structure">For Structure</string>
+    <string name="categories">Categories</string>
+    <string name="priority">Priority</string>
+    <string name="type">Document Type</string>
+    <string name="entry_date">Entry Date</string>
+    <string name="response">Response of</string>
+    <string name="mail_classed">Mail classed</string>
+    <string name="internal_reference">Internal Reference</string>
+    <string name="object_received">Object Received</string>
+    <string name="entry_date_received">Entry Date Received</string>
+    <string name="mail_reference">Mail Reference</string>
+    <string name="departure_date">Departure Date</string>
+    <string name="mail_date">Mail Date</string>
+    <string name="object">Object</string>
+    <string name="recipient">Recipient</string>
+    <string name="priority_">Priority :</string>
+    <string name="type_">Document Type :</string>
+    <string name="type__">Type</string>
+    <string name="entry_date_">Entry Date :</string>
+    <string name="response_">Response of :</string>
+    <string name="mail_classed_">Mail classed :</string>
+    <string name="internal_reference_">Internal Reference :</string>
+    <string name="mail_reference_">Mail Reference :</string>
+    <string name="departure_date_">Departure Date :</string>
+    <string name="mail_date_">Mail Date :</string>
+    <string name="object_">Object :</string>
+    <string name="recipient_">Recipient :</string>
+    <string name="mail">Mail</string>
+    <string name="enter">Enter recovery</string>
+    <string name="send">Send</string>
+    <string name="received">Received</string>
+    <string name="all">All</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="compose_email">Compose email</string>
+    <string name="compose">Compose</string>
+    <string name="update">UPDATE</string>
+    <string name="details">Details</string>
+    <string name="dg_mail">DG Mail</string>
+    <string name="arrived_mail">Mail Arrived</string>
+    <string name="sent_mail">Mail Sent</string>
+    <string name="trait_mail">Mail To Trait</string>
+    <string name="traited_mail">Traited Mail</string>
+    <string name="sent_mail_email">Sent Mail With Email</string>
+    <string name="valid_email">Enter a valid email</string>
+    <string name="nothing_in_archive">Nothing in Archive</string>
+    <string name="nothing_in_mails">No Mails</string>
+    <string name="nothing_in_report">No Report</string>
+    <string name="nothing_in_contact">No Contact</string>
+    <string name="nothing_in_trace">No Trace</string>
+    <string name="nothing_in_user">No User</string>
+    <string name="no_comments">No comments</string>
+    <string name="fr">FR</string>
+    <string name="en">EN</string>
+    <string name="nothing_in_structure">No Structure</string>
+    <string name="nothing_in_category">No Category</string>
+    <string name="nothing_in_started">No Favorite</string>
+    <string name="new_password">New Password</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="email__">Email :</string>
+    <string name="language_changed">Language changed</string>
+    <string name="old_">Old :</string>
+    <string name="reference">Reference </string>
+    <string name="generate_password">Generate a password</string>
+    <string name="action">Action :</string>
+    <string name="time">Time </string>
+    <string name="update_time">Update Time </string>
+    <string name="approuve">Approve</string>
+    <string-array name="priotity">
+        <item>Normale</item>
+        <item>Prioritaire</item>
+        <item>urgent</item>
+        <item>Trés urgent</item>
+    </string-array>
+    <string-array name="document_type">
+        <item>Depart</item>
+        <item>Arriver</item>
+    </string-array>
+    <string-array name="mail_changes">
+        <item>Action</item>
+        <item>Ajouter un courrier</item>
+        <item>Modifier un courrier</item>
+    </string-array>
+    <string-array name="type">
+        <item>Aucun</item>
+        <item>Public</item>
+        <item>Confidentiel</item>
+        <item>Pour Information</item>
+        <item>Départ Structures</item>
+        <item>Doléance</item>
+    </string-array>
+    <string-array name="report">
+        <item>Type</item>
+        <item>Mensuelle</item>
+        <item>Journalier</item>
+    </string-array>
+
+
+
+</resources>

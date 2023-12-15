@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/archiveFragment"
+        android:title="@string/archive"
+        android:icon="@drawable/ic_archive"/>
+    <item
+        android:id="@+id/favoriteFragment"
+        android:title="@string/favorite"
+        android:icon="@drawable/ic_favorite"/>
+    <item
+        android:id="@+id/employeeFragment"
+        android:title="@string/employee"
+        android:icon="@drawable/ic_name"/>
+    <item
+        android:id="@+id/contactFragment"
+        android:title="@string/contact"
+        android:icon="@drawable/contact"/>
+    <item
+        android:id="@+id/reportFragment"
+        android:title="@string/report"
+        android:icon="@drawable/ic_doc"/>
+    <item android:title="@string/mail">
+        <menu>
+            <item
+                android:id="@+id/allDocumentsFragment"
+                android:title="@string/all"
+                android:icon="@drawable/ic_folder"/>
+            <item
+                android:id="@+id/sendFragment"
+                android:title="@string/send"
+                android:icon="@drawable/ic_output"/>
+            <item
+                android:id="@+id/receivedFragment"
+                android:title="@string/received"
+                android:icon="@drawable/ic_input"/>
+            <item
+                android:id="@+id/toTraitFileFragment"
+                android:title="@string/trait_mail"
+                android:icon="@drawable/ic_clock"/>
+            <item
+                android:id="@+id/traitFileFragment"
+                android:title="@string/traited_mail"
+                android:icon="@drawable/ic_trait"/>
+            <item
+                android:id="@+id/sendFileWithEmailFragment"
+                android:title="@string/email_"
+                android:icon="@drawable/ic_gmail"/>
+        </menu>
+
+    </item>
+
+
+
+
+
+</menu>

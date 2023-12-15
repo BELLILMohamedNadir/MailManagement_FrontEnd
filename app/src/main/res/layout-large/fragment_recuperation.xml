@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.fragment.RecuperationFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_margin="25dp">
+      <ImageView
+          android:id="@+id/img_send_attendance"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/ic_send_email"
+          android:layout_gravity="end"/>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginVertical="10dp">
+         <EditText
+             android:id="@+id/edt_recovery"
+             android:layout_width="wrap_content"
+             android:layout_height="40dp"
+             android:minWidth="60dp"
+             android:inputType="number"
+             android:textAlignment="center"
+             android:text="0"
+             android:background="@color/white"
+             android:layout_marginHorizontal="10dp"
+             android:textSize="20sp"
+             android:layout_toEndOf="@+id/img_minus"
+             android:textColor="@color/black"/>
+         <ImageView
+             android:id="@+id/img_add"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_add"
+             android:layout_centerVertical="true"
+             android:layout_toEndOf="@id/edt_recovery"/>
+         <ImageView
+             android:id="@+id/img_minus"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:src="@drawable/ic_minus"/>
+      </RelativeLayout>
+
+   </LinearLayout>
+
+</FrameLayout>

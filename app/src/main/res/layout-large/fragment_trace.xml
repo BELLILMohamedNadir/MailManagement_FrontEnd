@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ui.fragment.TraceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linear_layout_search_trace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="1dp"
+                    app:cardCornerRadius="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:id="@+id/img_menu_trace"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/menu"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user_trace"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_marginVertical="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_user"/>
+                        <EditText
+                            android:id="@+id/edt_search_trace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/img_menu_trace"
+                            android:layout_toStartOf="@+id/img_user_trace"
+                            android:hint="@string/search"
+                            android:background="@drawable/shape"
+                            android:layout_marginHorizontal="10dp"
+                            android:textSize="18sp"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="7dp"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:elevation="5dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="5dp"
+                            android:padding="2dp">
+                            <TextView
+                                android:id="@+id/txt_action_trace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/action_"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+                            <Spinner
+                                android:id="@+id/spinner_action_trace"
+                                android:layout_width="42dp"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/txt_action_trace"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_du_trace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:elevation="5dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="5dp"
+                            android:padding="2dp">
+                            <TextView
+                                android:id="@+id/txt_du_trace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/from"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_calender"
+                                android:layout_toEndOf="@id/txt_du_trace"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="5dp"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_ou_trace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:elevation="5dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginHorizontal="5dp"
+                            android:padding="2dp">
+                            <TextView
+                                android:id="@+id/txt_ou_trace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/to"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_calender"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_toEndOf="@id/txt_ou_trace"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_trace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/img_trace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_trace"/>
+            <TextView
+                android:id="@+id/txt_trace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/img_trace"
+                android:text="@string/nothing_in_trace"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_trace"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_layout_search_trace">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_trace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+                        <include layout="@layout/facebook_shimmer_contact"/>
+
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_trace"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_marginTop="5dp"/>
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

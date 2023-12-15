@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ui.fragment.AllDocumentsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/float_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/gray"
+            android:src="@drawable/ic_gmail"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_search_mail_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="1dp"
+                    app:cardCornerRadius="20dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:padding="1dp">
+
+                        <ImageView
+                            android:id="@+id/img_menu_mail_all"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/menu"/>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_user_mail_all"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:layout_marginVertical="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_user"/>
+                        <EditText
+                            android:id="@+id/edt_search_mail_all"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/img_menu_mail_all"
+                            android:layout_toStartOf="@+id/img_user_mail_all"
+                            android:hint="@string/search"
+                            android:background="@drawable/shape"
+                            android:layout_marginHorizontal="10dp"
+                            android:textSize="18sp"
+                            android:layout_centerVertical="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+                <HorizontalScrollView
+                    android:id="@+id/hs_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="7dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:elevation="5dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="5dp"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/txt_categories"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/category"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+                                <Spinner
+                                    android:id="@+id/spinner_categories"
+                                    android:layout_width="42dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@id/txt_categories"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_entry_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:elevation="5dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="5dp"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/txt_entry_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/entry_date"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_calender"
+                                    android:layout_toEndOf="@id/txt_entry_date"
+                                    android:layout_gravity="center"
+                                    android:layout_marginHorizontal="5dp"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/card_departure_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginVertical="3dp"
+                            android:elevation="5dp">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="5dp"
+                                android:padding="2dp">
+                                <TextView
+                                    android:id="@+id/txt_departure_date"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/departure_date"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/black"/>
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_calender"
+                                    android:layout_marginHorizontal="5dp"
+                                    android:layout_toEndOf="@id/txt_departure_date"/>
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <LinearLayout
+                    android:id="@+id/relative_filter_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="1dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginEnd="7dp"
+                        android:src="@drawable/ic_filter"/>
+                    <TextView
+                        android:id="@+id/txt_filter_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hide"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_all_document"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/img_all_mails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_mail__" />
+            <TextView
+                android:id="@+id/txt_nothing_all_mails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_below="@+id/img_all_mails"
+                android:text="@string/nothing_in_mails"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_all_mails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_layout_search_mail_all">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_mail_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+                        <include layout="@layout/facebook_shimmer_pdf"/>
+
+                    </LinearLayout>
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_all_mails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/shimmer_mail_all"
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

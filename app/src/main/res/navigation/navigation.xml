@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/allDocumentsFragment">
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact">
+        <action
+            android:id="@+id/action_contactFragment2_to_addContactFragment2"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_contactFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact">
+        <action
+            android:id="@+id/action_addContactFragment2_to_contactFragment2"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_addContactFragment_to_contactDetailsFragment"
+            app:destination="@id/contactDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fileFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file">
+        <action
+            android:id="@+id/action_fileFragment_to_showPageFragment"
+            app:destination="@id/showPageFragment" />
+        <action
+            android:id="@+id/action_fileFragment_to_mailDetailsFragment"
+            app:destination="@id/mailDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_archiveFragment"
+            app:destination="@id/archiveFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.SendFragment"
+        android:label="fragment_send"
+        tools:layout="@layout/fragment_send">
+        <action
+            android:id="@+id/action_sendFragment_to_addDocumentToSendFragment"
+            app:destination="@id/addDocumentToSendFragment" />
+        <action
+            android:id="@+id/action_sendFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDocumentToSendFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.AddDocumentToSendFragment"
+        android:label="fragment_add_document_to_send"
+        tools:layout="@layout/fragment_add_document_to_send">
+        <action
+            android:id="@+id/action_addDocumentToSendFragment_to_sendFragment"
+            app:destination="@id/sendFragment" />
+        <action
+            android:id="@+id/action_addDocumentToSendFragment_to_showPdfFragment"
+            app:destination="@id/showPdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/receivedFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ReceivedFragment"
+        android:label="fragment_received"
+        tools:layout="@layout/fragment_received">
+        <action
+            android:id="@+id/action_receivedFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allDocumentsFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.AllDocumentsFragment"
+        android:label="fragment_all_documents"
+        tools:layout="@layout/fragment_all_documents">
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_sendFileWithEmailFragment"
+            app:destination="@id/sendFileWithEmailFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_traitFileFragment"
+            app:destination="@id/traitFileFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_sendEmailFragment"
+            app:destination="@id/sendEmailFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_toTraitFileFragment"
+            app:destination="@id/toTraitFileFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_archiveFragment"
+            app:destination="@id/archiveFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_sendFragment"
+            app:destination="@id/sendFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_receivedFragment"
+            app:destination="@id/receivedFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_receivedFragment2"
+            app:destination="@id/receivedFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_fileFragment"
+            app:destination="@id/fileFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_employeeAttendanceFragment"
+            app:destination="@id/employeeAttendanceFragment" />
+        <action
+            android:id="@+id/action_allDocumentsFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/archiveFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ArchiveFragment"
+        android:label="fragment_archive"
+        tools:layout="@layout/fragment_archive">
+        <action
+            android:id="@+id/action_archiveFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_archiveFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_favoriteFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showPdfFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ShowPdfFragment"
+        android:label="fragment_show_pdf"
+        tools:layout="@layout/fragment_show_pdf">
+        <action
+            android:id="@+id/action_showPdfFragment_to_addDocumentToSendFragment"
+            app:destination="@id/addDocumentToSendFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendEmailFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.SendEmailFragment"
+        android:label="fragment_send_email"
+        tools:layout="@layout/fragment_send_email">
+        <action
+            android:id="@+id/action_sendEmailFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactDetailsFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ContactDetailsFragment"
+        android:label="fragment_contact_details"
+        tools:layout="@layout/fragment_contact_details">
+        <action
+            android:id="@+id/action_contactDetailsFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showPageFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ShowPageFragment"
+        android:label="fragment_show_page"
+        tools:layout="@layout/fragment_show_page">
+        <action
+            android:id="@+id/action_showPageFragment_to_fileFragment"
+            app:destination="@id/fileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mailDetailsFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.MailDetailsFragment"
+        android:label="fragment_mail_details"
+        tools:layout="@layout/fragment_mail_details">
+        <action
+            android:id="@+id/action_mailDetailsFragment_to_fileFragment"
+            app:destination="@id/fileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/traitFileFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.TraitFileFragment"
+        android:label="fragment_trait_file"
+        tools:layout="@layout/fragment_trait_file">
+        <action
+            android:id="@+id/action_traitFileFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toTraitFileFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ToTraitFileFragment"
+        android:label="fragment_to_trait_file"
+        tools:layout="@layout/fragment_to_trait_file">
+        <action
+            android:id="@+id/action_toTraitFileFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendFileWithEmailFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.GmailFragment"
+        android:label="fragment_send_file_with_email"
+        tools:layout="@layout/fragment_gmail">
+        <action
+            android:id="@+id/action_sendFileWithEmailFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+        <action
+            android:id="@+id/action_sendFileWithEmailFragment_to_gmailDetailsFragment"
+            app:destination="@id/gmailDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gmailDetailsFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.GmailDetailsFragment"
+        android:label="fragment_gmail_details"
+        tools:layout="@layout/fragment_gmail_details" >
+        <action
+            android:id="@+id/action_gmailDetailsFragment_to_sendFileWithEmailFragment"
+            app:destination="@id/sendFileWithEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" >
+        <action
+            android:id="@+id/action_employeeFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+        <action
+            android:id="@+id/action_employeeFragment_to_addEmployeeFragment"
+            app:destination="@id/addEmployeeFragment" />
+        <action
+            android:id="@+id/action_employeeFragment_to_employeeDetailsFragment"
+            app:destination="@id/employeeDetailsFragment" />
+        <action
+            android:id="@+id/action_employeeFragment_to_sendEmailToEmployeeFragment"
+            app:destination="@id/sendEmailToEmployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEmployeeFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.AddEmployeeFragment"
+        android:label="fragment_add_employee"
+        tools:layout="@layout/fragment_add_employee" >
+        <action
+            android:id="@+id/action_addEmployeeFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeDetailsFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.EmployeeDetailsFragment"
+        android:label="fragment_employee_details"
+        tools:layout="@layout/fragment_employee_details" >
+        <action
+            android:id="@+id/action_employeeDetailsFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeAttendanceFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.EmployeeAttendanceFragment"
+        android:label="fragment_employee_attendance"
+        tools:layout="@layout/fragment_employee_attendance" >
+        <action
+            android:id="@+id/action_employeeAttendanceFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_reportFragment_to_allDocumentsFragment"
+            app:destination="@id/allDocumentsFragment" />
+        <action
+            android:id="@+id/action_reportFragment_to_reportDetailsFragment"
+            app:destination="@id/reportDetailsFragment" />
+        <action
+            android:id="@+id/action_reportFragment_to_dailyFragment"
+            app:destination="@id/dailyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reportDetailsFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.ReportDetailsFragment"
+        android:label="fragment_report_details"
+        tools:layout="@layout/fragment_report_details" >
+        <action
+            android:id="@+id/action_reportDetailsFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendEmailToEmployeeFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.SendEmailToEmployeeFragment"
+        android:label="fragment_send_email_to_employee"
+        tools:layout="@layout/fragment_send_email_to_employee" >
+        <action
+            android:id="@+id/action_sendEmailToEmployeeFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dailyFragment"
+        android:name="com.example.gestiondecourrier.ui.ui.fragment.DailyFragment"
+        android:label="fragment_daily"
+        tools:layout="@layout/fragment_daily" >
+        <action
+            android:id="@+id/action_dailyFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+</navigation>

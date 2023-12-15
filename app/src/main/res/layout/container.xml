@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="3dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="1dp">
+            <View
+                android:id="@+id/view_urgent"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/img_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_doc"/>
+
+            <ImageView
+                android:id="@+id/img_archive_archive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toStartOf="@+id/view_urgent"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_save" />
+            <ImageView
+                android:id="@+id/img_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/view_urgent"
+                android:src="@drawable/ic_favorite"/>
+            <TextView
+                android:id="@+id/txt_source"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_toEndOf="@+id/img_pdf"
+                android:layout_toStartOf="@+id/img_archive_archive"
+                android:maxLines="1"
+                android:layout_marginStart="15dp"
+                app:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="15sp"
+                android:autoSizeMaxTextSize="18sp"
+                android:autoSizeStepGranularity="1sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

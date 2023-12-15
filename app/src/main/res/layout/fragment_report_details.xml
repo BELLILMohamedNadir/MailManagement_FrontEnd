@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ui.fragment.ReportDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_print"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_printer"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"/>
+        <ImageView
+            android:id="@+id/img_checked"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_done"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/pdf_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_print"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_approved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape2"
+            android:text="@string/approve"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginVertical="10dp"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
